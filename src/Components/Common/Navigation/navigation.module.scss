@@ -1,0 +1,21 @@
+.wrapper {
+    height: 40px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(249, 199, 236, 0.342);
+  
+  & > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: aliceblue;
+    width: 100%;
+  }
+  }
+  
