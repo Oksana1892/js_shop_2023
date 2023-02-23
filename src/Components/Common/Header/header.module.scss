@@ -1,0 +1,28 @@
+.header {
+    height: 60px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(147, 73, 142);
+
+    &_logo {
+    color: rgb(250, 249, 250);
+    font-size: 20px;
+    }
+
+    &_title {
+        color: rgb(250, 249, 250);
+    font-size: 60px;
+    }
+
+    &_contacts {
+        color: rgb(250, 249, 250);
+    font-size: 20px;
+    }
+
+    &_login {
+    color: rgb(9, 8, 9);
+    font-size: 20px;
+}
+}

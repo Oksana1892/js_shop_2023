@@ -1,0 +1,25 @@
+.footer {
+    height: 60px;
+    padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(147, 73, 142);
+
+  &_text {
+    font-size: 25px;
+    justify-content: left;
+    color: rgb(250, 249, 250);
+  }
+  &_order {
+    font-size: 25px;
+    justify-content: center;
+    color: rgb(250, 249, 250);
+  }
+  &_contacts {
+    font-size: 25px;
+    justify-content: right;
+    color: rgb(250, 249, 250);
+  }
+}
+
