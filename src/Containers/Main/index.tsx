@@ -5,7 +5,11 @@ import React from 'react';
 export const Main = () => {
   return (
     <div className="page_wrapper">
-      <Content />
+      <Content title= {'Розы'}  />
+      <Content title= {'Гладиолусы'} />
+      <Content title= {'Лилии'} />
+      <Content title= {'Орхидеи'} />
+      <Content title= {'Тюльпаны'} /> 
     </div>
   );
 };

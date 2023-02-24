@@ -22,7 +22,7 @@ export const Header = () => {
       <span className={style.header_contacts}>+7 999 123 56 78</span>
       {userEmail ? (
         <div>
-        <span className={style.name}>{userEmail}</span>
+        <span className={style.header_name}>{userEmail}</span>
         <button type = "button" onClick={logoutHandler}>ВЫЙТИ</button>
         </div>
       ) : (

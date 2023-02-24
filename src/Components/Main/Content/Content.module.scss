@@ -1,7 +1,28 @@
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh
+    
 }
+.product {
+    display:flex;
+justify-content: space-between;
+align-items: center;
+width: 500px;
+height: 100px;
+border: 1px solid #212121;
+padding: 0 16px;
+}
+
+.img {
+    width: 10%;
+    transition: 0.5s;
+}
+.counter_group {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

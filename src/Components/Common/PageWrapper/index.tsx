@@ -11,7 +11,7 @@ export const PageWrapper = ()=> {
     <div className={style.page_wrapper}>
       <Header />
       <Nav/>
-      <main className={style.page_wrapper_content}>
+      <main>
       <Outlet />
       </main>
       <Footer />
