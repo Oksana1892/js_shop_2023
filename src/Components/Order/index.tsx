@@ -3,12 +3,13 @@ import style from './Order.module.scss';
 
 export const OrderPay = () => {
   return (
-    <main className={style.wrapper}>
+    <main className={style.order}>
+      <div className={style.order_wrapper}>
       <h1>ОПЛАТА И ДОСТАВКА</h1>
       <h3>Уважаемые покупатели, мы тщательно следим за выполнением каждого заказа.</h3>
       <p>Для удобства и упрощения Вашего участия мы выработали следующий алгоритм:</p>
       <p>
-      <ul className={style.wrapper_ul}>
+      <ul className={style.order_ul}>
         <li>После выбора букета с Вами связывается наш менеджер;</li>
         <li>
           Он собирает подробную информацию о доставке, это может быть, как по телефону, так и в
@@ -22,13 +23,14 @@ export const OrderPay = () => {
         </p>
         <p>Условия доставки:</p>
         <p>
-        <ul className={style.wrapper_ul}>
+        <ul className={style.order_ul}>
           <li>При заказе от 4000 рублей на букеты, не участвующие в акциях, доставка — бесплатно.</li>
           <li>Круглосуточно и без выходных.</li>
           <li>В течение 2-х часов по Нижнему Новгороду и области в день заказа</li>
           <li>При оформлении заказа заранее – в конкретный день и время по договоренности.</li>
       </ul>
       </p>
+      </div>
     </main>
   );
 }

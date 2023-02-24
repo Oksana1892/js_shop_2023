@@ -21,16 +21,13 @@ export const Content = (props: CounterPropsType) => {
       <main className={style.content}>
         <div className={style.product}>
           <h3> {title}</h3>
-           
-          <img className={style.img} src='/Rose.jpg' alt="Rose" />
-          
+          <img className={style.img} src='/Rose.jpg' alt="Rose" /> 
           <div className={style.counter_group}> 
           <button disabled = {count === 0} onClick={decrementHandler}>-</button>
           <h3>{count}</h3>
           <button onClick = {incrementHandler}>+</button>
           </div> 
         </div>
-        
       </main>
     );
   };

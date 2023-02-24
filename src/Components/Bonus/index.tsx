@@ -3,11 +3,12 @@ import style from './Bonus.module.scss';
 
 export const BonusList = () => {
   return (
-    <main className={style.wrapper}>
+    <main className={style.bonus}>
+      <div className={style.bonus_wrapper}>
       <h1>Бонусная программа</h1>
       <h5>Как получить бонусные баллы?</h5>
       <p>
-        <ul className={style.wrapper_ul}>
+        <ul className={style.bonus_ul}>
           <li>
             Оформите заказ на сайте или сделайте покупку в любом магазине Цветы-онлайн, назвав
             флористу на кассе номер своего телефона
@@ -17,7 +18,7 @@ export const BonusList = () => {
       </p>
       <h5>Как потратить бонусные баллы?</h5>
       <p>
-        <ul className={style.wrapper_ul}>
+        <ul className={style.bonus_ul}>
           <li>При оформлении заказа на сайте выберите в корзине пункт - Оплата бонусами</li>
           <li>
             При покупке в сети магазинов Цветы-онлайн сообщите флористу, что Вы хотите списать
@@ -30,6 +31,7 @@ export const BonusList = () => {
         Срок действия бонусных баллов на счёте участника программы составляет 60 дней с даты
         начисления. Бонусные баллы начисляются на следующий день после покупки.
       </p>
+      </div>
     </main>
   );
 };

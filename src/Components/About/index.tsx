@@ -3,7 +3,8 @@ import style from './About.module.scss';
 
 export const AboutUs = () => {
   return (
-    <main className={style.wrapper}>
+    <main className={style.about}>
+      <div className={style.about_wrapper}>
       <h1>О НАС</h1>
       <p>
         Цветы онлайн – сеть цветочных магазинов, осуществляющая розничную продажу и доставку
@@ -19,6 +20,7 @@ export const AboutUs = () => {
         количество других цветов на все случаи жизни и на любой вкус.
       </p>
       <p>Работаем напрямую с лучшими цветочными плантациями России, Эквадора, Кении и Голландии.</p>
+      </div>
     </main>
   );
 };
