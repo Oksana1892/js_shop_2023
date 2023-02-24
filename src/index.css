@@ -3,9 +3,13 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
 .page_wrapper {
   height: 100vh;
   display: grid; 
   grid-template-rows: 60px auto 60px;
+  margin: 0;
+  padding: 0;
 }

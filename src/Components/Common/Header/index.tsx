@@ -1,4 +1,6 @@
+import { routes } from 'Helpers/Constants/routes';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './header.module.scss';
 
 export const Header = () => {
@@ -7,6 +9,6 @@ export const Header = () => {
 </span>
 <span className={style.header_title}>Цветы онлайн</span>
 <span className={style.header_contacts}>+7 999 123 56 78</span>
-    <span className={style.header_login}>APP_NAME</span>
+<Link to = {routes.auth} className={style.header_login}>Личный кабинет</Link>
     </header>;
 };

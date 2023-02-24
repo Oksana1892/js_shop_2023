@@ -19,6 +19,9 @@ export const Nav = () => {
         <li>
         <Link to={routes.contacts}>КОНТАКТЫ</Link>
             </li>
+            <li>
+            <Link to={routes.bonus}>БОНУСЫ</Link>
+            </li>
       </ul>
     </nav>
   );
