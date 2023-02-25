@@ -4,10 +4,13 @@ import style from './Content.module.scss'
 type CounterPropsType = {
   title: string;
   count?: number;
+  price: string;
+  image: string;
 };
-export const Content = (props: CounterPropsType) => {
-  const { title } = props;
 
+
+export const Content =(props: CounterPropsType)  => {
+  const { title, price, image } = props;
   const [count, setCount] = useState(0);
 
   const incrementHandler = () => {
@@ -19,15 +22,18 @@ export const Content = (props: CounterPropsType) => {
 
     return (
       <main className={style.content}>
-        <div className={style.product}>
-          <h3> {title}</h3>
-          <img className={style.img} src='/Rose.jpg' alt="Rose" /> 
-          <div className={style.counter_group}> 
+        <ul>
+          <li className={style.product}>
+            <img src = {image} alt = 'img' />
+            <h1>{title}</h1>
+            <h2>{price}</h2>
+        <div className={style.counter_group}> 
           <button disabled = {count === 0} onClick={decrementHandler}>-</button>
           <h3>{count}</h3>
           <button onClick = {incrementHandler}>+</button>
-          </div> 
-        </div>
+          </div>
+          </li>
+          </ul>
       </main>
     );
   };

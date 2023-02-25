@@ -34,5 +34,15 @@
     margin: 5px;
     padding: 5px;
   }
+&_cart_button {
+    float: right;
+    cursor: pointer;
+    transition: color 500 ms ease;
+    font-size: 40px;
+    color: rgb(250, 249, 250);
+  }
 
+&_cart_button:hover {
+    color: rgb(38, 3, 118);
 }
+  }
