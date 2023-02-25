@@ -4,36 +4,39 @@ import style from './Content.module.scss'
 type CounterPropsType = {
   title: string;
   count?: number;
-  price: string;
+  price?: number;
   image: string;
 };
-
 
 export const Content =(props: CounterPropsType)  => {
   const { title, price, image } = props;
   const [count, setCount] = useState(0);
+  const [productAdd, setProductAdd] = useState(false);
 
   const incrementHandler = () => {
     setCount((prev) => prev + 1);
   };
   const decrementHandler = ()=> {
     setCount((prev) => prev - 1);
-  }
+  };
+
+  const addToCart = () => {
+    setProductAdd((prevState) => !prevState);
+  };
 
     return (
       <main className={style.content}>
-        <ul>
-          <li className={style.product}>
-            <img src = {image} alt = 'img' />
-            <h1>{title}</h1>
-            <h2>{price}</h2>
+        <div className={productAdd ? `${style.wrapper_active}` : `${style.product}`}>
+        <img className={style.img} src = {image} alt = 'img' />
+        <div className={style.title}>{title}</div>
+        <div className={style.price}>{price} руб/шт</div>
         <div className={style.counter_group}> 
-          <button disabled = {count === 0} onClick={decrementHandler}>-</button>
-          <h3>{count}</h3>
-          <button onClick = {incrementHandler}>+</button>
+          <button className={style.counter_button} disabled = {count === 0} onClick={decrementHandler}>-</button>
+          <h2>{count}</h2>
+          <button className={style.counter_button} onClick = {incrementHandler}>+</button>
           </div>
-          </li>
-          </ul>
+          <button className={style.counter_button} onClick = {addToCart}> {productAdd ? 'УДАЛИТЬ' : 'В КОРЗИНУ'}</button>
+          </div>
       </main>
     );
   };

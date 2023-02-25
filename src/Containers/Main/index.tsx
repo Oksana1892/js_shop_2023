@@ -5,10 +5,10 @@ import React from 'react';
 export const Main = () => {
   return (
     <div className="page_wrapper">
-      <Content   title = {'Розы'} price = {'1000 руб.'} image = {'Rose.jpg'}/>
-      <Content   title = {'Гладиолусы'} price = {'500 руб.'} image = {'Gladiolus.jpg'}/>
-      <Content   title = {'Лилии'} price = {'800 руб.'} image = {'Lily.jpg'}/>
-      <Content   title = {'Тюльпаны'} price = {'300 руб.'} image = {'Tulip.jpg'}/>
+      <Content   title = {'Розы'} price = {200} image = {'Rose.jpg'}/>
+      <Content   title = {'Гладиолусы'} price = {300} image = {'Gladiolus.jpg'}/>
+      <Content   title = {'Лилии'} price = {500} image = {'Lily.jpg'}/>
+      <Content   title = {'Тюльпаны'} price = {100} image = {'Tulip.jpg'}/>
     </div>
   );
 };

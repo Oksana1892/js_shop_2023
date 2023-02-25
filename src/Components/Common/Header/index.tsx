@@ -13,8 +13,7 @@ export const Header = () => {
   const logoutHandler = () => {
     dispatch(UserSliceActions.clearUserData());
   };
-  
-
+ 
   return (
     <header className={style.header}>
       <span className={style.header_logo}>
